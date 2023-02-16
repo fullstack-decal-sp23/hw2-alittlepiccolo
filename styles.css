@@ -32,10 +32,17 @@ h2 {
 }
 
 .threevert {
+  height: 33.333333%;
+}
+
+.thailand-small-stripe {
+  height:16.6666%
 }
 
 .threehoriz {
-  width: 33.3%;
+  display: flex;
+  justify-content:end;
+  flex-direction:row;
 }
 
 .narrow {
@@ -55,10 +62,24 @@ h2 {
   top: 50px;
 }
 
+.label {
+  color:black; 
+  width: 40px;
+  transition: transform 0.25s ease;
+}
+.label:hover {
+  color:orange; 
+  width:60px; 
+  transform: scale(2);
+}
+
 /* Colors */
 
 /* QUESTION 1 */
 
+.red {
+  background-color: red
+}
 .orange {
   background-color: orange;
 }
@@ -75,8 +96,8 @@ h2 {
   background-color: blue;
 }
 
-.lightblue {
-  background-color: lightblue;
+.light-blue {
+  background-color: #00a5e5;
 }
 
 .purple {
@@ -91,18 +112,28 @@ h2 {
   background-color: #000;
 }
 
+#white {
+  background-color: white
+}
+
 /* BEGIN QUESTION 2 */
 
+.thailand-flag {
+  height: 300px;
+  width:  500px;
+  border-style: solid;
+  margin-bottom: 5rem;
+}
 .thailand-red {
-  /* TODO */
+  background-color: #B5002D;
 }
 
 .thailand-white {
-  /* TODO */
+  color: white;
 }
 
 .thailand-blue {
-  /* TODO */
+  background-color: #2E2A4C;
 }
 
 /* END QUESTION 2 */
@@ -111,14 +142,17 @@ h2 {
 
 .romania-blue {
   background-color: #002c84;
+  width: 33.33%;
 }
 
 .romania-yellow {
   background-color: #ffcf00;
+  width: 33.33%;
 }
 
 .romania-red {
   background-color: #e10017;
+  width: 33.33%;
 }
 
 /* END QUESTION 3 */
@@ -126,15 +160,26 @@ h2 {
 /* QUESTION 4 */
 .mexico-green {
   background-color: #006341;
+  width: 33.333%;
 }
 
 .mexico-img {
-  /* TODO */
+  background-image: url(eagle.png);
+  background-color: white;
+  align-self:center;
+  width: 33.3333%;
+}
+
+.mexico-white {
+  background-color: white;
+  width: 33.333%;
 }
 
 .mexico-red {
   background-color: #ce1126;
+  width: 33.333%;
 }
+
 
 /* QUESTION 6 */
 .margin-container {
@@ -149,17 +194,24 @@ h2 {
 /* For margin practice */
 .flag1 {
   background-color: red;
-  /* TODO */
+  height: 300px;
+  width: 500px;
+  border-style: solid;
+  margin: 5px;
+  
 }
 
 .flag2 {
   background-color: blue;
-  /* TODO */
+  height: 300px;
+  width: 500px;
+  border-style: solid;
+  margin: 5px;
 }
 /* For padding practice */
 .padding-container {
   box-sizing: border-box;
   background-color: lightblue;
   background-clip: content-box, padding-box;
-  /* TODO */
+  padding:60px;
 }
